@@ -1,0 +1,7 @@
+node_modules
+yarn.lock
+package-lock.json
+coverage/
+.jest_cache/
+junit-TEST.xml
+.DS_Store
