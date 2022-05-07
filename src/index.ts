@@ -8,7 +8,7 @@ import deploymentData from "./data_files/Deployments.json";
 import releasesData from "./data_files/Releases.json";
 
 export function executer() {
-  const deploymentList = deploymentData as Deployment[];
+  const deploymentList = deploymentData as Deployment[]
   const releaseList = releasesData as Release[];
   const combinedList = generateCombineList(deploymentList, releaseList);
   const resultMap = generateResultMap(combinedList);

@@ -5,7 +5,7 @@ export type Environment = {
 
 export type Deployment = {
   Id: string;
-  ReleasedId: string;
+  ReleaseId: string;
   EnvironmentId: string;
   DeployedAt: string;
 };
@@ -19,7 +19,7 @@ export type Release = {
   Id: string;
   ProjectId: string;
   Version: string;
-  CreatedAt: string;
+  Created: string;
 };
 
 export type CombinedType = {

@@ -7,7 +7,7 @@ export function generateCombineList(
   const combinedList: CombinedType[] = [];
   for (const item of deploymentList) {
     const deploymentId = item.Id;
-    const releasedId = item.ReleasedId;
+    const releasedId = item.ReleaseId;
     const environmentId = item.EnvironmentId;
     const projectId = releaseList.find(
       (item) => item.Id === releasedId

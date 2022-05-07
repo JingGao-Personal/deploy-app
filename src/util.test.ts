@@ -8,21 +8,21 @@ import {
 describe("util functions", () => {
   it("---- generate combined list should work correctly", () => {
     const mockDeployList: Deployment[] = [
-      { Id: "1", ReleasedId: "1", EnvironmentId: "1", DeployedAt: "1" },
-      { Id: "2", ReleasedId: "1", EnvironmentId: "2", DeployedAt: "2" },
-      { Id: "3", ReleasedId: "2", EnvironmentId: "1", DeployedAt: "3" },
-      { Id: "4", ReleasedId: "2", EnvironmentId: "2", DeployedAt: "4" },
-      { Id: "5", ReleasedId: "3", EnvironmentId: "1", DeployedAt: "5" },
-      { Id: "6", ReleasedId: "3", EnvironmentId: "2", DeployedAt: "6" },
-      { Id: "7", ReleasedId: "4", EnvironmentId: "1", DeployedAt: "7" },
-      { Id: "8", ReleasedId: "4", EnvironmentId: "2", DeployedAt: "8" },
+      { Id: "1", ReleaseId: "1", EnvironmentId: "1", DeployedAt: "1" },
+      { Id: "2", ReleaseId: "1", EnvironmentId: "2", DeployedAt: "2" },
+      { Id: "3", ReleaseId: "2", EnvironmentId: "1", DeployedAt: "3" },
+      { Id: "4", ReleaseId: "2", EnvironmentId: "2", DeployedAt: "4" },
+      { Id: "5", ReleaseId: "3", EnvironmentId: "1", DeployedAt: "5" },
+      { Id: "6", ReleaseId: "3", EnvironmentId: "2", DeployedAt: "6" },
+      { Id: "7", ReleaseId: "4", EnvironmentId: "1", DeployedAt: "7" },
+      { Id: "8", ReleaseId: "4", EnvironmentId: "2", DeployedAt: "8" },
     ];
 
     const mockReleaseList: Release[] = [
-      { Id: "1", ProjectId: "1", Version: "bla", CreatedAt: "1" },
-      { Id: "2", ProjectId: "1", Version: "bla", CreatedAt: "2" },
-      { Id: "3", ProjectId: "2", Version: "bla", CreatedAt: "3" },
-      { Id: "4", ProjectId: "2", Version: "bla", CreatedAt: "4" },
+      { Id: "1", ProjectId: "1", Version: "bla", Created: "1" },
+      { Id: "2", ProjectId: "1", Version: "bla", Created: "2" },
+      { Id: "3", ProjectId: "2", Version: "bla", Created: "3" },
+      { Id: "4", ProjectId: "2", Version: "bla", Created: "4" },
     ];
 
     const expectCombineList: CombinedType[] = [
